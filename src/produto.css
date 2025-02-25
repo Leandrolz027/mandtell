@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;  /* Centraliza logo e nav com espaço entre eles */
+    align-items: center;  /* Alinha logo e nav verticalmente */
+    padding: 30px 40px;
+    background: linear-gradient(90deg, #0e86e7, #032a75);
+}
+
+header .logo {
+    position: absolute; /* Faz a logo se mover para a esquerda */
+    left: 20px;
+}
+
+header .logo img {
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;  /* Alinha o menu à direita */
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;  /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #032a75; /* Cor de fundo ao passar o mouse */
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+}
+
+nav ul.active {
+    display: block; /* Exibe o menu */
+}
+
+
+/* Estilo dos Serviços */
+
+/* Container dos serviços, garantindo que os botões fiquem alinhados */
+.servicos .servico {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 280px; /* Ajuste de largura para que os serviços não ocupem a tela inteira */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos .servico h3 {
+    margin-bottom: 20px; /* Espaçamento entre o título e o botão */
+}
+
+/* Estilo do botão Fale Conosco */
+.servicos .servico .whatsapp-button {
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espaçamento para o botão ficar afastado do conteúdo */
+}
+
+/* Efeito de hover no botão */
+.servicos .servico .whatsapp-button:hover {
+    background-color: #128c7e; /* Cor mais escura ao passar o mouse */
+}
+
+.servicos {
+    padding-top: 100px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Centraliza o container */
+}
+
+.servicos h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #0e86e7;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;  /* Limita a largura do grid */
+    margin: 0 auto;  /* Centraliza o grid */
+}
+
+.servico {
+    padding: 20px;
+    border: 2px solid #0e86e7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center; /* Centraliza o texto dentro dos cards */
+}
+
+.servico h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0e86e7;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.servico p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.whatsapp-btn i {
+    font-size: 1.5em;
+}
+
+/* Estilo dos Benefícios */
+.beneficios {
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Centraliza o container */
+}
+
+.beneficios h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #0e86e7;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.beneficios-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;  /* Limita a largura do grid */
+    margin: 0 auto;  /* Centraliza o grid */
+}
+
+.beneficio {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #0e86e7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto dentro dos cards */
+}
+
+.beneficio i {
+    font-size: 2.5em;
+    color: #0e86e7;
+    margin-bottom: 10px;
+}
+
+.beneficio p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-container, .beneficios-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header .logo {
+        display: none;
+
+    }
+}
+
+footer {
+    background-color: #0e86e7; /* Cor do rodapé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.floating-icons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.floating-icons a {
+    display: block;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 60%;
+    font-size: 30px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.floating-icons a:hover {
+    background-color: #000000; /* Cor ao passar o mouse */
+}
+
+.whats {
+    background-color: darkgreen;
+}
+
+.insta {
+    background-color: rgb(233, 89, 80);
+}
+
+/* Responsividade */
+@media (max-width: 450px) {
+    section.carrossel {
+        height: 400px;
+    }
+
+    header .logo {
+        display: none;
+
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .servicos-container, .beneficios-container {
+        grid-template-columns: 1fr 1fr 1fr; /* Ajusta a grid para 3 colunas */
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-container, .beneficios-container {
+        grid-template-columns: 1fr 1fr; /* Ajusta a grid para 2 colunas */
+    }
+
+    header .logo {
+        display: none;
+
+    }
+
+    nav ul {
+        display: none; /* Oculta o menu de navegação para telas menores */
+    }
+
+    .hamburger {
+        display: block; /* Exibe o ícone de hambúrguer para abrir o menu */
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .whatsapp-btn {
+        font-size: 1em; /* Ajusta o tamanho da fonte do botão WhatsApp */
+        padding: 8px 16px; /* Ajusta o padding do botão */
+    }
+    
+    .floating-icons a {
+        font-size: 24px; /* Ajusta o tamanho dos ícones flutuantes */
+        padding: 12px; 
+        right: 10px;
+    }
+
+    div.floating-icons {
+        right: 25px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    section.carrossel {
+        height: 400px;
+    }
+
+    header .logo {
+        display: none;
+
+    }
+    .servicos .servico {
+        width: 75%; /* Ajusta os serviços para ocupar 100% da largura da tela */
+    }
+
+    .servicos-container, .beneficios-container {
+        grid-template-columns: 1fr; /* Ajusta a grid para 1 coluna */
+    }
+
+    .beneficios h2 {
+        font-size: 20px;
+    }
+}
