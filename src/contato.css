@@ -156,6 +156,7 @@ nav ul.active {
     /* Exibe o hambúrguer apenas em telas pequenas */
     .hamburger {
         display: block;
+        color: white;
     }
 
     /* Oculta o menu normal em telas pequenas */
